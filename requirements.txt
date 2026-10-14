@@ -1,0 +1,10 @@
+streamlit>=1.40
+torch
+diffusers
+transformers
+accelerate
+sentencepiece
+faster-whisper
+pillow
+librosa
+soundfile

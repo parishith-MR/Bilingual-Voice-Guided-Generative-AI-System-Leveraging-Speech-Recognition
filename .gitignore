@@ -1,0 +1,32 @@
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Python
+__pycache__/
+*.pyc
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Model caches and large files
+*.pt
+*.bin
+*.safetensors
+.cache/
+huggingface/
+
+# Generated / temp files
+*.wav
+*.mp3
+ai_generated_art.png
+voice_image.png
+streamlit.log
+cloudflared
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
