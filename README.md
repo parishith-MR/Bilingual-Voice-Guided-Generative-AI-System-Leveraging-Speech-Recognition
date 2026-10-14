@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 🎨 Voice → Image Studio
 
 Speak in **Tamil or English**, get an accurate **English text**, and turn it into an **AI-generated image**, all from a simple Streamlit web app.
@@ -24,12 +23,12 @@ Speak in **Tamil or English**, get an accurate **English text**, and turn it int
 
 ## 🧰 Tech stack
 
-| Task | Tool |
-|---|---|
-| Speech recognition | [faster-whisper](https://github.com/SYSTRAN/faster-whisper) (`small` / `medium`) |
-| Translation | [facebook/nllb-200-distilled-600M](https://huggingface.co/facebook/nllb-200-distilled-600M) |
-| Image generation | [segmind/tiny-sd](https://huggingface.co/segmind/tiny-sd) via 🤗 Diffusers |
-| UI | Streamlit |
+| Task               | Tool                                                                                        |
+| ------------------ | ------------------------------------------------------------------------------------------- |
+| Speech recognition | [faster-whisper](https://github.com/SYSTRAN/faster-whisper) (`small` / `medium`)            |
+| Translation        | [facebook/nllb-200-distilled-600M](https://huggingface.co/facebook/nllb-200-distilled-600M) |
+| Image generation   | [segmind/tiny-sd](https://huggingface.co/segmind/tiny-sd) via 🤗 Diffusers                  |
+| UI                 | Streamlit                                                                                   |
 
 ## 📁 Project structure
 
@@ -62,6 +61,7 @@ Fastest option: a full request takes about 15 seconds on a T4 GPU.
 5. When finished, run the last **Stop** cell to shut down the app and tunnel.
 
 > **Notes**
+>
 > - Keep the "start the app" cell running while you use the app.
 > - The link changes every time you start the tunnel.
 > - Colab sessions are temporary. After a disconnect, re-run the cells. Models re-download on a fresh session.
@@ -73,6 +73,7 @@ Fastest option: a full request takes about 15 seconds on a T4 GPU.
 %cd YOUR_REPO
 !pip install -q -r requirements.txt nvidia-cublas-cu12 nvidia-cudnn-cu12
 ```
+
 Then follow the cloudflared and start steps in the notebook.
 
 ---
@@ -108,25 +109,25 @@ The first run downloads the models (about 3-4 GB in total). After that they are 
 
 ## ⚙️ Settings guide
 
-| Setting | What it does |
-|---|---|
-| Speech model | `medium` is much better for Tamil; `small` is faster |
-| Style | Adds style keywords after your sentence |
-| Quality steps | More steps = more detail, slower |
-| Prompt strength | Higher = follows your text more strictly |
-| Negative prompt | Things the image should avoid |
-| Seed | Same seed + same prompt = same image |
+| Setting         | What it does                                         |
+| --------------- | ---------------------------------------------------- |
+| Speech model    | `medium` is much better for Tamil; `small` is faster |
+| Style           | Adds style keywords after your sentence              |
+| Quality steps   | More steps = more detail, slower                     |
+| Prompt strength | Higher = follows your text more strictly             |
+| Negative prompt | Things the image should avoid                        |
+| Seed            | Same seed + same prompt = same image                 |
 
 ## 🛠️ Troubleshooting
 
-| Error | Fix |
-|---|---|
-| `open() got an unexpected keyword argument 'metadata_errors'` | PyAV version mismatch. Already avoided: the app decodes audio with `librosa`. Make sure you have the latest `app.py`. |
-| `Library libcublas.so.12 is not found` | Install `nvidia-cublas-cu12 nvidia-cudnn-cu12` and start Streamlit with `LD_LIBRARY_PATH` set (the notebook does this). |
-| Link doesn't open / app shows old behaviour | An old process is still running. Run the **Stop** cell, then the **Start** cell, and open the **new** link. |
-| Mic button doesn't record | Use the `https://` link and allow microphone access. |
-| GPU out of memory | Switch the speech model to `small`. |
-| Very slow on local machine | Normal on CPU. Use Colab, or lower the quality steps. |
+| Error                                                         | Fix                                                                                                                     |
+| ------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| `open() got an unexpected keyword argument 'metadata_errors'` | PyAV version mismatch. Already avoided: the app decodes audio with `librosa`. Make sure you have the latest `app.py`.   |
+| `Library libcublas.so.12 is not found`                        | Install `nvidia-cublas-cu12 nvidia-cudnn-cu12` and start Streamlit with `LD_LIBRARY_PATH` set (the notebook does this). |
+| Link doesn't open / app shows old behaviour                   | An old process is still running. Run the **Stop** cell, then the **Start** cell, and open the **new** link.             |
+| Mic button doesn't record                                     | Use the `https://` link and allow microphone access.                                                                    |
+| GPU out of memory                                             | Switch the speech model to `small`.                                                                                     |
+| Very slow on local machine                                    | Normal on CPU. Use Colab, or lower the quality steps.                                                                   |
 
 ## ⚠️ Limitations
 
@@ -148,8 +149,10 @@ The first run downloads the models (about 3-4 GB in total). After that they are 
 
 ## 📄 License
 
-MIT. See `LICENSE` (add one via GitHub: *Add file → Create new file → LICENSE → choose template*).
-=======
+# MIT. See `LICENSE` (add one via GitHub: _Add file → Create new file → LICENSE → choose template_).
+
 # Bilingual-Voice-Guided-Generative-AI-System-Leveraging-Speech-Recognition
+
 Bilingual (Tamil-English) Voice-Guided Generative AI System Leveraging Speech Recognition
->>>>>>> origin/main
+
+> > > > > > > origin/main
