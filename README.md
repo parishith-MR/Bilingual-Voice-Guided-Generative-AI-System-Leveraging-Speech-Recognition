@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 🎨 Voice → Image Studio
 
 Speak in **Tamil or English**, get an accurate **English text**, and turn it into an **AI-generated image**, all from a simple Streamlit web app.
