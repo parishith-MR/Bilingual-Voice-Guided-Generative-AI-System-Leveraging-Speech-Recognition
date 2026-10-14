@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🎨 Voice → Image Studio
 
 Speak in **Tamil or English**, get an accurate **English text**, and turn it into an **AI-generated image**, all from a simple Streamlit web app.
@@ -148,3 +149,7 @@ The first run downloads the models (about 3-4 GB in total). After that they are 
 ## 📄 License
 
 MIT. See `LICENSE` (add one via GitHub: *Add file → Create new file → LICENSE → choose template*).
+=======
+# Bilingual-Voice-Guided-Generative-AI-System-Leveraging-Speech-Recognition
+Bilingual (Tamil-English) Voice-Guided Generative AI System Leveraging Speech Recognition
+>>>>>>> origin/main
